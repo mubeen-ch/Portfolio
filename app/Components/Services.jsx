@@ -94,7 +94,7 @@ const Services = () => {
           <motion.div
             key={index}
             variants={fadeInUp}
-            className="flex items-center gap-3 p-4 border border-gray-300 dark:border-white rounded-xl bg-white dark:bg-transparent shadow-sm hover:-translate-y-1 transition duration-300 cursor-pointer"
+            className="flex items-center gap-3 p-2  md:p-4 border border-gray-300 dark:border-white rounded-xl bg-white dark:bg-transparent shadow-sm hover:-translate-y-1 transition duration-300 cursor-pointer"
           >
             <Image
               src={skill.bgImage}
@@ -103,7 +103,7 @@ const Services = () => {
               height={40}
               className="rounded-md bg-white"
             />
-            <h3 className="text-base font-medium text-gray-800 dark:text-white">
+            <h3 className="text-xs md:text-base font-medium text-gray-800 dark:text-white">
               {skill.title}
             </h3>
           </motion.div>

@@ -88,12 +88,21 @@ const About = ({ isDarkMode }) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2 }}
             viewport={{ once: true }}
-            className="text-lg font-semibold my-6 text-gray-700 font-Ovo dark:text-white/80"
+            className="hidden md:flex text-lg font-semibold my-6 text-gray-700 font-Ovo dark:text-white/80"
+          >
+            Tools I Use
+          </motion.h3>
+          <motion.h3
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true }}
+            className="md:hidden text-center text-lg font-semibold my-6 text-gray-700 font-Ovo dark:text-white/80"
           >
             Tools I Use
           </motion.h3>
 
-          <ul className="flex items-center gap-3 sm:gap-5 flex-wrap">
+          <ul className="flex justify-center md:justify-start items-center gap-3 md:gap-5 flex-wrap">
             {toolsData.map((tool, index) => (
               <motion.li
                 key={index}
