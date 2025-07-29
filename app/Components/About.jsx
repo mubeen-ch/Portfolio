@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const About = ({ isDarkMode }) => {
   return (
-    <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
+    <div id="about" className="w-full px-[12%] py-4 scroll-mt-8">
       {/* Section Heading */}
       <motion.h4
         initial={{ opacity: 0, y: 20 }}
@@ -27,7 +27,7 @@ const About = ({ isDarkMode }) => {
       </motion.h1>
 
       {/* Content Section */}
-      <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+      <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-10">
         {/* Left Side: Image */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -52,13 +52,13 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="max-w-2xl mb-10 font-Ovo">
-            I am a Full Stack Developer specializing in the MERN stack, with a strong expertise in React.js.
-            Throughout my career, I have primarily focused on frontend development, gaining in-depth experience
-            in building user interfaces and managing application state efficiently. I have a solid understanding
-            of how JavaScript works under the hood, as well as a comprehensive knowledge of how React.js operates
-            to create Single Page Applications (SPAs). My skills include crafting responsive, dynamic, and maintainable
-            applications while ensuring seamless integration with backend services.
-          </p>
+  I am a Full Stack Developer specializing in the MERN stack, with strong expertise in React.js and Next.js. 
+  Throughout my career, I have primarily focused on frontend development, gaining extensive experience in building user interfaces and managing application state efficiently. 
+  I have a deep understanding of JavaScript internals and how React.js works to power modern Single Page Applications (SPAs). 
+  In addition, I have worked extensively with Next.js, leveraging its powerful features such as server-side rendering (SSR), static site generation (SSG), API routes, and optimized image handling to build fast, scalable, and SEO-friendly web applications. 
+  My skill set includes crafting responsive, dynamic, and maintainable applications with seamless backend integration.
+</p>
+
 
           {/* Info List */}
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">

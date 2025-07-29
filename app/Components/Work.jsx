@@ -36,7 +36,7 @@ const ProjectCard = ({ title, description, frameworks, bgImage, link }) => (
       viewport={{ once: true, amount: 0.2 }}
       variants={cardVariants}
       whileHover="hover"
-      className="border h-[400px] border-gray-200 rounded-xl shadow-md p-4 bg-white dark:bg-transparent text-center flex flex-col items-center cursor-pointer hover:-translate-y-1 duration-500"
+      className="border h-auto md:h-[400px] border-gray-200 rounded-xl shadow-md p-4 bg-white dark:bg-transparent text-center flex flex-col items-center cursor-pointer hover:-translate-y-1 duration-500"
     >
       <h2 className="text-lg font-semibold text-gray-800 dark:text-white">{title}</h2>
       <p className="text-lg text-gray-500 mt-3 dark:text-white">{description}</p>

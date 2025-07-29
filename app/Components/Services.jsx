@@ -11,7 +11,7 @@ const Services = () => {
   };
 
   const staggerContainer = {
-    hidden: { opacity: 1 },
+    hidden: { opacity: 0.6 },
     visible: {
       opacity: 1,
       transition: { staggerChildren: 0.2 },
@@ -21,7 +21,7 @@ const Services = () => {
   return (
     <motion.div
       id="services"
-      className="w-full px-[6%] py-16 scroll-mt-20"
+      className="w-full px-[6%] py-4 scroll-mt-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
@@ -61,9 +61,9 @@ const Services = () => {
         {serviceData.map(({ icon, title, description }, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, scale: 0.8 }}
+            initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.2 }}
             className="border border-gray-300 dark:border-white rounded-3xl px-8 py-10 hover:shadow-xl hover:bg-lightHover hover:-translate-y-1 transition duration-500 dark:hover:bg-darkHover"
           >
             <Image src={icon} alt={`${title} icon`} className="w-10 h-10" />
