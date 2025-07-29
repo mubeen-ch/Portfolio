@@ -82,6 +82,14 @@ export const assets = {
 
 export const workData = [
     {
+        title: 'Hurak ',
+        description: 'A UK based company provide paid courses of all kind just like udemy',
+        bgImage: '/hurak-learning.png',
+        frameworks:'NextJs ,Larawel ',
+        link:'https://hurak.com/',
+
+    },
+    {
         title: 'Al-Rayyan Travel',
         description: 'A complete travel app for Web & Mobile buying and booking tickets online.And working Smoothly',
         bgImage: '/pj11.png',
@@ -112,7 +120,7 @@ export const inProcess = [
         description: 'Monolithic web design framework i have done all the frontend-end of this still is in development process',
         bgImage: '/hirelanding.png',
         frameworks:'Reactjs , Ruby on Rails , TailwindCss, Postgress , Prisma',
-        link:'',
+        link:'#',
 
     },
     {
@@ -120,7 +128,7 @@ export const inProcess = [
         description: 'FYP(Not Hoisted) Serves as a middleware between buyers and sellers',
         bgImage: 'fyp01.png',
         frameworks:'ReactNative , Nodejs , MongoDb , Express',
-        link:''
+        link:'#'
     },
 ]
 
