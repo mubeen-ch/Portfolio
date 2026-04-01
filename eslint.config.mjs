@@ -9,6 +9,20 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals"),
+  {
+    // This force-overrides the parser to a string so Next.js can serialize it
+    languageOptions: {
+      parser: "@babel/eslint-parser", 
+      parserOptions: {
+        requireConfigFile: false,
+        babelOptions: {
+          presets: ["next/babel"],
+        },
+      },
+    },
+  },
+];
 
 export default eslintConfig;
