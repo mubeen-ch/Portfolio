@@ -2,6 +2,7 @@ import { assets } from '@/next_js_portfolio_assets/assets/assets';
 import Image from 'next/image';
 import React from 'react';
 import { motion } from "framer-motion";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 const Header = () => {
   // Animation Variants for cleaner code and synchronized staggering
@@ -79,7 +80,7 @@ const Header = () => {
           className="group px-8 py-4 bg-black text-white rounded-full flex items-center gap-3 hover:bg-gray-800 transition-all dark:bg-white dark:text-black"
         >
           Work with me
-          <Image src={assets.right_arrow_white} alt="" className="w-4 group-hover:translate-x-1 transition-transform invert dark:invert-0" />
+          <ArrowRight size={18}/>
         </a>
         <a
           href="/Mubeen_resume.pdf"

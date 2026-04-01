@@ -69,7 +69,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                         className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-white/10 transition-colors"
                         aria-label="Toggle Dark Mode"
                     >
-                        <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' />
+                        {/* <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt='' className='w-6' /> */}
                     </button>
 
                     <a href="#contact" className='hidden lg:flex items-center gap-3 px-8 py-2.5 border border-gray-500 rounded-full dark:border-white/50 font-Ovo hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300'>
